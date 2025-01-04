@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 import './style.css'
+import Counter from './components/Counter'
 export default class App extends Component {
+
     render() {
         return (
-            <div className='wrapper'>
-
-                <h1>Counter</h1>
-                <p>counter : <span>0</span> </p>
-
-                <div className="button-container">
-                    <button>increment</button>
-                    <button>decrement</button>
-                </div>
-
-            </div>
-
+            <>
+                <Counter
+                    title='Counter 1'
+                />
+                <Counter
+                    title='Counter 2'
+                />
+                <Counter
+                    title='Counter 3'
+                />
+            </>
         )
     }
 }
-
-
-
